@@ -51,7 +51,7 @@ tg_post_msg() {
 compile(){
 cd ${KERNEL_ROOTDIR}
 make kernelversion
-export VERSION=$(make kernelversion)-Finix
+export VERSION=$(make kernelversion)-Kewl
 export KERNEL_USE_CCACHE=1
 tg_post_msg "<b>$KERNEL_NAME-(rosy)</b>%0AKernel Version : <code>${VERSION}</code>%0ABuilder Name : <code>${KBUILD_BUILD_USER}</code>%0ABuilder Host : <code>${KBUILD_BUILD_HOST}</code>%0ADevice Defconfig: <code>${DEVICE_DEFCONFIG}</code>%0AGCC Version : <code>${KBUILD_COMPILER_STRING}</code>%0AGCC Version32 : <code>${KBUILD_COMPILER_STRING32}</code>%0AGCC Rootdir : <code>${GCC_ROOTDIR}</code>%0AKernel Rootdir : <code>${KERNEL_ROOTDIR}</code>"
 make -j16 O=out ARCH=arm64 SUBARCH=arm64 ${DEVICE_DEFCONFIG}
