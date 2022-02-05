@@ -20,7 +20,6 @@ tg_post_msg() {
 
 }
 
-bash eleven/download.sh
-bash eleven/rm.sh
-bash eleven/gcc.sh
-bash eleven/done.sh
+curl https://raw.githubusercontent.com/levi3609/Gitpod-Workspaces/main/eleven/download.sh | bash
+curl https://raw.githubusercontent.com/levi3609/Gitpod-Workspaces/main/eleven/gcc.sh | bash
+curl https://github.com/levi3609/Gitpod-Workspaces/blob/main/eleven/done.sh | bash
