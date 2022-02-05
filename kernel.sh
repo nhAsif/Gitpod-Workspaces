@@ -2,11 +2,11 @@
 
 export USE_CCACHE=1
 export CCACHE_DIR="$HOME/.ccache"
-export TZ=Asia/Jakarta
+export TZ=Asia/Dhaka
 export DEVICE_CODENAME=rosy
 export ANYKERNEL=https://github.com/NFS-projects/AnyKernel3
-export TG_TOKEN=2077072464:AAEx-N96E2mieWlqx43TCZKrfodCAbJPlWI
-export TG_CHAT_ID=-1001593782892
+export TG_TOKEN=5082048108:AAGqpIINnnIEVzPaYD5U48OnZsB4FvFcB_c
+export TG_CHAT_ID=-615560513
 export BUILD_USER=xiaomi
 export BUILD_HOST=rosy
 export BOT_MSG_URL="https://api.telegram.org/bot$TG_TOKEN/sendMessage"
@@ -21,7 +21,6 @@ tg_post_msg() {
 }
 
 bash eleven/download.sh
-bash eleven/clang
 bash eleven/rm.sh
 bash eleven/gcc.sh
 bash eleven/done.sh
