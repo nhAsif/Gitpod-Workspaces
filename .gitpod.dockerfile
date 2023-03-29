@@ -3,7 +3,7 @@
 #
 
 # Fetch Ubuntu Latest
-FROM gitpod/workspace-full:latest
+FROM nexgang/ubuntu:latest
 
 # Root
 USER root
